@@ -295,7 +295,7 @@ body {
     }
 
     #ling1 {
-        background-color: aliceblue;
+        background-color: white;
         width: 150px;
         height: 150px;
         color: black;
@@ -311,13 +311,13 @@ body {
     #tri {
         width: 40px;
         height: 40px;
-        background-color: aliceblue;
+        background-color: white;
         rotate: -45deg;
         translate: 130px -95px;
     }
 
     #ling2 {
-      background-color: aliceblue;
+      background-color: white;
       width: 150px;
       height: 150px;
       color: black;
@@ -333,14 +333,14 @@ body {
   #tri2 {
       width: 40px;
       height: 40px;
-      background-color: aliceblue;
+      background-color: white;
       rotate: -45deg;
       translate: 240px -95px;
       position: relative;
   }
 
     #ling5 {
-      background-color: aliceblue;
+      background-color: white;
       width: 150px;
       height: 150px;
       color: black;
@@ -357,13 +357,13 @@ body {
   #tri5 {
       width: 40px;
       height: 40px;
-      background-color: aliceblue;
+      background-color: white;
       rotate: -45deg;
       translate: 230px -660px;
   }
 
     #ling4 {
-      background-color: aliceblue;
+      background-color: white;
       width: 150px;
       height: 150px;
       color: black;
@@ -375,7 +375,7 @@ body {
   #tri1 {
       width: 40px;
       height: 40px;
-      background-color: aliceblue;
+      background-color: white;
       rotate: -45deg;
       translate: 140px -530px;
   }
@@ -388,7 +388,7 @@ body {
       #separa {
         width: 2px;
         height: 1000px;
-        background-color: aliceblue ;
+        background-color: white ;
         translate: 220px;
       }
       #separa p {
