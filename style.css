@@ -53,7 +53,7 @@ body {
         border-radius: 25px;
         text-align: center;
         padding-top: 3px;
-        color: aliceblue;
+        color: white;
     }
     
     nav li:hover {
@@ -94,10 +94,7 @@ body {
         position: absolute;
         translate: 90px;
     }
-
-
-    
-    
+  
     #inicio {
         margin-left: -10px;
           
@@ -106,7 +103,7 @@ body {
     #apresent {
         z-index: 1;
         position: relative;
-        color: aliceblue;
+        color: white;
         /*border: 1px red solid;*/
         text-align: center;
         width: 400px;
@@ -122,7 +119,7 @@ body {
     }
     
     #apresent p {
-        color: aliceblue;
+        color: white;
     }
     
     #apresent spam {
@@ -141,7 +138,7 @@ body {
         border-radius: 50%;
         width: 300px;
         height: 300px;
-        background-color: azure;
+        background-color: white;
         translate: -260px -200px;
     }
     
@@ -149,7 +146,7 @@ body {
         border-radius: 50%;
         width: 100px;
         height: 100px;
-        background-color: azure;
+        background-color: white;
         translate: 290px 30px;
     }
     
@@ -157,7 +154,7 @@ body {
         border-radius: 50%;
         width: 400px;
         height: 400px;
-        background-color: azure;
+        background-color: white;
         translate: -380px 550px;
     }
     
@@ -165,7 +162,7 @@ body {
         border-radius: 50%;
         width: 40px;
         height: 40px;
-        background-color: azure;
+        background-color: white;
         translate: 370px -210px;
     }
     
@@ -173,14 +170,14 @@ body {
         border-radius: 50%;
         width: 30px;
         height: 30px;
-        background-color: azure;
+        background-color: white;
         translate: 10px 10px;
     }
     #bolha_peq2 {
         border-radius: 50%;
         width: 15px;
         height: 15px;
-        background-color: azure;
+        background-color: white;
         translate: -5px 10px;
     }
     .card {
@@ -284,7 +281,7 @@ body {
       .linguagens {
         margin: 10px auto;
         text-align: center;
-        color: aliceblue;
+        color: white;
         width: 400px;
         height: 40px;
         
@@ -407,7 +404,7 @@ body {
       }
 
       #projetos #titulo {
-          color: aliceblue;
+          color: white;
       }
       
       .card_projeto {
@@ -517,7 +514,7 @@ body {
         border-radius: 25px;
         text-align: center;
         padding-top: 3px;
-        color: aliceblue;
+        color: white;
     }
     
     nav li:hover {
@@ -566,7 +563,7 @@ body {
     #apresent {
         z-index: 1;
         position: relative;
-        color: aliceblue;
+        color: white;
         /*border: 1px red solid;*/
         text-align: start;
         width: 500px;
@@ -582,7 +579,7 @@ body {
     }
     
     #apresent p {
-        color: aliceblue;
+        color: white;
     }
     
     #apresent spam {
@@ -601,7 +598,7 @@ body {
         border-radius: 50%;
         width: 400px;
         height: 400px;
-        background-color: azure;
+        background-color: white;
         translate: -580px -200px;
     }
     
@@ -609,7 +606,7 @@ body {
         border-radius: 50%;
         width: 200px;
         height: 200px;
-        background-color: azure;
+        background-color: white;
         translate: 470px -130px;
     }
     
@@ -617,7 +614,7 @@ body {
         border-radius: 50%;
         width: 400px;
         height: 400px;
-        background-color: azure;
+        background-color: white;
         translate: -980px 100px;
     }
     
@@ -625,22 +622,22 @@ body {
         border-radius: 50%;
         width: 100px;
         height: 100px;
-        background-color: azure;
-        translate: 900px -200px;
+        background-color: white;
+        translate: 950px -200px;
     }
     
     #bolha_peq {
         border-radius: 50%;
         width: 30px;
         height: 30px;
-        background-color: azure;
+        background-color: white;
         translate: 10px 10px;
     }
     #bolha_peq2 {
         border-radius: 50%;
         width: 15px;
         height: 15px;
-        background-color: azure;
+        background-color: white;
         translate: -5px 10px;
     }
     .card {
@@ -744,7 +741,7 @@ body {
       .linguagens {
           margin: 10px auto;
           text-align: center;
-          color: aliceblue;
+          color: white;
           width: 1000px;
           height: 250px;
           
@@ -755,7 +752,7 @@ body {
       }
 
       #ling1 {
-          background-color: aliceblue;
+          background-color: white;
           width: 150px;
           height: 150px;
           color: black;
@@ -769,7 +766,7 @@ body {
       }
 
       #ling2 {
-        background-color: aliceblue;
+        background-color: white;
         width: 150px;
         height: 150px;
         color: black;
@@ -785,7 +782,7 @@ body {
     #tri2 {
         width: 40px;
         height: 40px;
-        background-color: aliceblue;
+        background-color: white;
         rotate: -45deg;
         translate: 455px -215px;
         position: relative;
@@ -794,13 +791,13 @@ body {
       #tri {
           width: 40px;
           height: 40px;
-          background-color: aliceblue;
+          background-color: white;
           rotate: -45deg;
           translate: 55px -20px;
       }
 
       #ling5 {
-        background-color: aliceblue;
+        background-color: white;
         width: 150px;
         height: 150px;
         color: black;
@@ -817,13 +814,13 @@ body {
     #tri5 {
         width: 40px;
         height: 40px;
-        background-color: aliceblue;
+        background-color: white;
         rotate: -45deg;
         translate: 685px -330px;
     }
 
       #ling4 {
-        background-color: aliceblue;
+        background-color: white;
         width: 150px;
         height: 150px;
         color: black;
@@ -835,7 +832,7 @@ body {
     #tri1 {
         width: 40px;
         height: 40px;
-        background-color: aliceblue;
+        background-color: white;
         rotate: -45deg;
         translate: 275px 20px;
     }
@@ -846,7 +843,7 @@ body {
     }
 
       #separa {
-          background-color: aliceblue;
+          background-color: white;
           width: 1000px;
           height: 3px;
           margin: 0 auto;
@@ -868,7 +865,7 @@ body {
       #projetos #titulo {
           position: absolute;
           translate: 0 -100px;
-          color: aliceblue;
+          color: white;
       }
     
       .card_projeto {
