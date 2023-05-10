@@ -42,6 +42,7 @@ body {
     
     nav a {
         text-decoration: none;
+        color: white;
     }
     
     
@@ -58,12 +59,14 @@ body {
     
     nav li:hover {
         background-color: rgb(255, 255, 255);
-        color: black;
         border: solid rgb(255, 255, 255);
         cursor: pointer;
         transition: 0.55s;
     }
     
+    nav a:hover {
+        color: rgb(0, 0, 0);
+    }
     
     @keyframes Aparece {
         0% {
@@ -392,18 +395,20 @@ body {
           display: none;
       }
     
-      #projetos {
-          display: flex; 
-          flex-direction: column; 
-          gap: 20px;
-          margin-bottom: 30px;
-          width: 250px;
-          height: 300px;
-          justify-content: center;
-          margin: 500px auto;
-      }
+      .carrossel {
+        height: 650px;
+        width: 260px;
+        position: absolute;
+        right: 0px;
+        margin-top: 200px;
+        overflow: hidden;
+        translate: -120px -250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-      #projetos #titulo {
+      .carrossel #titulo {
           color: white;
       }
       
@@ -415,6 +420,45 @@ body {
           text-align: center;
       }
 
+      .cards {
+        display: flex;
+        position: relative;
+        height: 400px;
+        width: 900px;
+        right: 0px;
+        animation: carrossel 10s ease alternate infinite;
+        margin-top: 50px;
+        gap: 40px;
+        padding: 0 5px;
+    }
+
+    .cards:hover {
+        animation-play-state: paused;
+    }
+    
+    .card_projeto:hover {
+        transform: scale(1.1);
+        transition: .8s;
+    }
+    
+    .card_projeto:hover .info-card {
+        opacity: 1;
+        transition: .8s;
+    }
+
+    @keyframes carrossel {
+        0% {
+            right: -350px;
+        }
+    
+        50% {
+            right: -85px;
+        }
+    
+        100% {
+            right: 185px;
+        }
+    }
     
       .card_projeto button {
           border-radius: 20px;
@@ -452,6 +496,38 @@ body {
           width: 15px;
           height: 15px;
       }
+
+      #sobre {
+        text-align: center;
+        margin-top: 550px;
+      }
+
+      #sobre button {
+        border-radius: 50px;
+        translate: 0 -170px;
+        width: 150px;
+        height: 45px;
+        background-color: white;
+        border: transparent;
+        font-weight: 600;
+      }
+
+      #sobre button:hover {
+        transform: scale(1.1);
+        transition: 1s ease;
+        cursor: pointer;
+      }
+      
+      #sobre a {
+        text-decoration: none;
+        color: black;
+      }
+      #sobre button img {
+        width: 13px;
+        height: 13px;
+        margin-left: 15px;
+        margin-top: 0px;
+      }
    }
 
 
@@ -478,18 +554,22 @@ body {
     header {
         width: 100.2vw;
         height: 50px;
-        background-color: transparent;
-        margin: -10px 0 0 -10px;
+        backdrop-filter: blur(15px);
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-backdrop-filter: blur(15px);
+        margin: -100px 0 0 -10px;
         opacity: 0.8;
         display: flex;
-        
+        position: fixed;
+        z-index: 5;
     }
     
     nav {
         display: flex;
         width: 50vw;
         justify-content: flex-end;
-        translate: 370px 0px 0px;
+        translate: 500px 0px 0px;
     }
     
     nav ul {
@@ -497,12 +577,15 @@ body {
         justify-content: center;
         gap: 20px;
         list-style: none;
-        margin-top: 10px;
+        margin-top: 0px;
         padding-left: 20px;
+        
     }
     
     nav a {
         text-decoration: none;
+        position: relative;
+        color: white;
     }
     
     
@@ -511,18 +594,27 @@ body {
         background-color: transparent;
         width: 90px;
         height: 25px;
-        border-radius: 25px;
         text-align: center;
         padding-top: 3px;
         color: white;
+       
     }
     
-    nav li:hover {
-        background-color: rgb(255, 255, 255);
-        color: black;
-        border: solid rgb(255, 255, 255);
-        cursor: pointer;
-        transition: 0.55s;
+    nav a::after {
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 100px;
+        transition: 0.5s ease-in-out;
+        box-shadow: 1px 1px 5px rgb(255, 255, 255);
+    }
+
+    nav a:hover::after {
+        width: 100%;
     }
     
     
@@ -549,7 +641,7 @@ body {
     }
     
     header p {
-        color: rgb(255, 255, 255);
+        color: rgb(160, 160, 160);
         margin-left: 40px;
         margin-bottom: 10px;
     }
@@ -565,7 +657,7 @@ body {
         position: relative;
         color: white;
         /*border: 1px red solid;*/
-        text-align: start;
+        text-align: center;
         width: 500px;
         height: 300px;
         margin: 100px auto;
@@ -599,7 +691,7 @@ body {
         width: 400px;
         height: 400px;
         background-color: white;
-        translate: -580px -200px;
+        translate: -580px -100px;
     }
     
     #bolha1 {
@@ -652,6 +744,7 @@ body {
         display: flex;
         flex-direction: column;
         padding-top: 20px;
+        padding-bottom: 10px;
       }
       
       .card span {
@@ -853,7 +946,7 @@ body {
           display: none;
       }
     
-      #projetos {
+      .carrossel {
           display: flex;   
           gap: 20px;
           margin: 300px auto;
@@ -862,10 +955,15 @@ body {
          
       }
 
-      #projetos #titulo {
+      .carrossel #titulo {
           position: absolute;
           translate: 0 -100px;
           color: white;
+      }
+
+      .cards {
+        display: flex;
+        gap: 30px;
       }
     
       .card_projeto {
@@ -910,6 +1008,36 @@ body {
       .icon {
           width: 15px;
           height: 15px;
+      }
+
+      #sobre {
+        text-align: center;
+      }
+
+      #sobre button {
+        border-radius: 50px;
+        translate: 0 -170px;
+        width: 150px;
+        height: 45px;
+        background-color: white;
+        border: transparent;
+        font-weight: 600;
+      }
+
+      #sobre button:hover {
+        transform: scale(1.1);
+        transition: 1s ease;
+        cursor: pointer;
+      }
+      #sobre button img {
+        width: 13px;
+        height: 13px;
+        margin-left: 15px;
+        margin-top: 0px;
+      }
+      #sobre a {
+        text-decoration: none;
+        color: black;
       }
    }
 
