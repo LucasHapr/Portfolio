@@ -11,7 +11,12 @@ body {
     background-color: rgba(0, 10, 83, 0.932);
 }
 
+
+/*MOBILE*/
 @media screen and (max-width: 600px) {
+    html{
+        scroll-behavior: smooth;
+    }
     header {
         width: 100px;
         height: 50px;
@@ -195,6 +200,7 @@ body {
         display: flex;
         flex-direction: column;
         padding-top: 20px;
+        padding-bottom: 10px;
       }
       
       .card span {
@@ -400,9 +406,9 @@ body {
         width: 260px;
         position: absolute;
         right: 0px;
-        margin: 200px auto;
+        margin-top: 200px;
         overflow: hidden;
-        translate: -50px -250px;
+        translate: -120px -250px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -548,9 +554,12 @@ body {
 
 
 
-
+/*DESKTOP*/
 
    @media screen and (min-width: 600px) {
+    html{
+        scroll-behavior: smooth;
+    }
     header {
         width: 100.2vw;
         height: 50px;
