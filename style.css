@@ -408,7 +408,7 @@ body {
         right: 0px;
         margin-top: 200px;
         overflow: hidden;
-        translate: -120px -250px;
+        translate: -90px -250px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -430,7 +430,7 @@ body {
         display: flex;
         position: relative;
         height: 400px;
-        width: 900px;
+        width: 1000px;
         right: 0px;
         animation: carrossel 10s ease alternate infinite;
         margin-top: 50px;
@@ -454,15 +454,19 @@ body {
 
     @keyframes carrossel {
         0% {
-            right: -350px;
+            right: -390px;
+        }
+
+        25%{
+            right: -125px;
         }
     
         50% {
-            right: -85px;
+            right: 130px;
         }
     
         100% {
-            right: 185px;
+            right: 390px;
         }
     }
     
