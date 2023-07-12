@@ -6,6 +6,11 @@ body * {
     font-family: 'Inter', sans-serif;
 }
 
+*::selection{
+    color: black;
+    background-color: white;
+}
+
 body {
     
     background-color: rgba(0, 10, 83, 0.932);
